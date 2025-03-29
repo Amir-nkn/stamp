@@ -1,0 +1,128 @@
+/* 📌 از ۱۱۰۰px به پایین، تنظیمات اولیه برای گرید */
+@media screen and (max-width: 1100px) {
+    .grille-filtre > div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .grille {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+/* 📌 از ۹۰۰px به پایین، گرید دو ستونه شود */
+@media screen and (max-width: 900px) {
+    .grille-filtre > div {
+        gap: 15px;
+    }
+
+    .grille {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* 📌 از ۸۰۰px به پایین */
+@media screen and (max-width: 800px) {
+    .grille-filtre > div {
+        display: flex;
+        flex-direction: row;  /* فیلتر و گرید در کنار هم بمانند */
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: nowrap; /* از افتادن فیلتر به بالا جلوگیری می‌کند */
+    }
+
+    .filtre {
+        max-width: 25%;
+        flex-shrink: 0; /* جلوگیری از کوچک شدن بیش از حد */
+    }
+
+    .grille {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        flex-grow: 1; /* گرفتن فضای باقی‌مانده */
+    }
+}
+
+/* 📌 از ۷۰۰px به پایین */
+@media screen and (max-width: 700px) {
+    .grille-filtre > div {
+        gap: 10px;
+    }
+
+    .filtre {
+        max-width: 30%;
+    }
+
+    .grille {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 350px;
+    }
+    .pagination{
+        max-width: 350px;
+       margin: 20px auto;
+       max-width: 300px;
+    }
+}
+
+/* 📌 از ۶۰۰px به پایین */
+@media screen and (max-width: 600px) {
+    .grille-filtre > div {
+        flex-direction: row;  /* اطمینان از اینکه فیلتر بالا نمی‌رود */
+        gap: 5px;
+    }
+
+    .filtre {
+        max-width: 35%;
+    }
+
+    .grille {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 300px;
+    }
+
+    .pagination{
+        max-width: 350px;
+       margin: 20px auto;
+       max-width: 270px;
+    }
+}
+
+
+/* 📌 از ۵۰۰px به پایین */
+@media screen and (max-width: 500px) {
+    .grille-filtre > div {
+        display: flex;
+        flex-direction: row;  /* فیلتر در کنار گرید بماند */
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 5px;
+        flex-wrap: nowrap; /* جلوگیری از افتادن فیلتر روی گرید */
+    }
+
+    .filtre {
+        max-width: 40%;
+        flex-shrink: 0; /* جلوگیری از کوچک شدن بیش از حد */
+    }
+
+    .grille {
+        grid-template-columns: repeat(1, 1fr); /* گرید تک‌ستونه شود */
+        gap: 8px;
+      max-width: 250px;
+    }
+
+    .pagination{
+        max-width: 350px;
+       margin: 20px auto;
+       max-width: 250px;
+    }
+}
+

@@ -1,0 +1,91 @@
+/* در 700px، نمایش دو به دو */
+@media screen and (max-width: 700px) {
+    .conteneur-nouvelles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* دو کارت در یک ردیف */
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .element-nouvelle {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .element-nouvelle img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenu-nouvelle h4 {
+        font-size: 16px;
+    }
+
+    .contenu-nouvelle p {
+        font-size: 14px;
+    }
+
+    .contenu-nouvelle a {
+        font-size: 14px;
+    }
+}
+
+/* در 600px، همچنان دو به دو اما کمی کوچک‌تر */
+@media screen and (max-width: 600px) {
+    .conteneur-nouvelles {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .element-nouvelle {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .element-nouvelle img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenu-nouvelle h4 {
+        font-size: 15px;
+    }
+
+    .contenu-nouvelle p {
+        font-size: 13px;
+    }
+
+    .contenu-nouvelle a {
+        font-size: 13px;
+    }
+}
+
+/* در 500px، نمایش تک‌ستونی */
+@media screen and (max-width: 500px) {
+    .conteneur-nouvelles {
+        grid-template-columns: 1fr; /* تک‌ستونی */
+    }
+
+    .element-nouvelle {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .element-nouvelle img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenu-nouvelle h4 {
+        font-size: 14px;
+    }
+
+    .contenu-nouvelle p {
+        font-size: 12px;
+    }
+
+    .contenu-nouvelle a {
+        font-size: 12px;
+    }
+}

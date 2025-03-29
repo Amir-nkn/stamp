@@ -1,0 +1,108 @@
+
+  
+  .custom-navbar {
+    background: linear-gradient(90deg, #003366 0%, #1C39BB 100%);
+    padding: 15px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(145deg, #B8860B, #FFD700);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.4),
+                -3px -3px 8px rgba(255,255,255,0.05),
+                inset 0 0 0 2px #fff3cd;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nav-links li a::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(255,255,255,0.15);
+    transition: width 0.4s ease;
+    z-index: 1;
+  }
+  
+  .nav-links li a:hover::before {
+    width: 100%;
+  }
+  
+  .nav-links li a:hover {
+    color: #003366;
+    background: linear-gradient(145deg, #FFD700, #fff8dc);
+    box-shadow: inset 0 0 10px #fff3cd,
+                0 0 15px rgba(184, 134, 11, 0.7);
+  }
+  
+
+  .user-box {
+    color: #D1D1D1;
+   
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .user-box a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .nav-links li {
+      width: 100%;
+    }
+    .nav-links li a {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }

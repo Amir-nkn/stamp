@@ -1,0 +1,79 @@
+
+.meilleurs-vendeurs {
+    padding: 30px;
+    border: 1px solid var(--main-couleur);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cartes-vendeurs  {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.contenu-vendeur{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: 0.3s;
+    border: 1px solid var(--gris-pale);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.contenu-vendeur:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.contenu-vendeur img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.meilleurs-vendeurs h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.contenu-vendeur p {
+    font-size: 16px;
+}
+.note {
+    font-size: 16px;
+    color: #8C6B00;
+    margin: 10px 0;
+}
+.icônes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.icônes-sociales a {
+    font-size: 20px;
+    color: var(--couleur-secondaire);
+    text-decoration: none;
+}
+.icônes-sociales a:hover {
+    color:var(--blue-pale);
+}
+.bouton-vendeur{
+    background-color: transparent;
+    border: 2px solid var(--main-couleur);
+    color:black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bouton-vendeur:hover {
+    background: var(--blue-secondaire);
+    color: white;
+}

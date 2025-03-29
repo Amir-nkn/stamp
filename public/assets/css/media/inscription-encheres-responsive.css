@@ -1,0 +1,74 @@
+@media screen and (max-width: 700px) {
+    .inscription-encheres {
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .inscription-encheres h5 {
+        font-size: 20px;
+    }
+
+    .inscription-encheres p {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    /* فرم به صورت ستونی در بیاید */
+    #formulaire-encheres {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #formulaire-encheres input {
+        width: 90%;
+        max-width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #formulaire-encheres button {
+        width: 60%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* در 600px، تغییرات جزئی */
+@media screen and (max-width: 600px) {
+    .inscription-encheres {
+        width: 95%;
+    }
+
+    #formulaire-encheres input {
+        width: 100%;
+    }
+
+    #formulaire-encheres button {
+        width: 70%;
+    }
+}
+
+/* در 500px، فرم کاملاً وسط و دکمه بزرگ‌تر */
+@media screen and (max-width: 500px) {
+    .inscription-encheres {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #formulaire-encheres {
+        width: 100%;
+    }
+
+    #formulaire-encheres input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #formulaire-encheres button {
+        width: 80%;
+    }
+}

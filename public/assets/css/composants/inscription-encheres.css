@@ -1,0 +1,46 @@
+.inscription-encheres {
+    border: 1px solid var(--main-couleur);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.texte-inscription {
+    margin-bottom: 5px;
+}
+.inscription-encheres h5 {
+    font-size: 24px;
+}
+.inscription-encheres p {
+    font-size: 16px;
+    color: var(--gris);
+    margin: 10px 0;
+}
+[id="formulaire-encheres"] {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  margin-top: 30px;
+}
+[id="formulaire-encheres"] input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid var(--main-couleur);
+    border-radius: 5px;
+    font-size: 16px;
+}
+[id="formulaire-encheres"] button {
+    background: var(--blanc);
+    color: black;
+    border: 1px solid var(--main-couleur);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+[id="formulaire-encheres"] button:hover {
+    background: var(--blue-secondaire);
+    color: var(--blanc);
+}

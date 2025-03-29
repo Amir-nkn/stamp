@@ -1,0 +1,114 @@
+/* در 700px و 600px، نمایش دو به دو */
+@media screen and (max-width: 700px) {
+    .cartes-vendeurs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* دو کارت در هر ردیف */
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .contenu-vendeur {
+        max-width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .contenu-vendeur img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contenu-vendeur h5 {
+        font-size: 16px;
+    }
+
+    .contenu-vendeur p {
+        font-size: 14px;
+    }
+
+    .note {
+        font-size: 14px;
+    }
+
+    .icônes-sociales a {
+        font-size: 18px;
+    }
+
+    .bouton-vendeur {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+/* در 600px، همچنان دو به دو اما کوچکتر */
+@media screen and (max-width: 600px) {
+    .cartes-vendeurs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .contenu-vendeur {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .contenu-vendeur img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .contenu-vendeur h5 {
+        font-size: 15px;
+    }
+
+    .contenu-vendeur p {
+        font-size: 13px;
+    }
+
+    .note {
+        font-size: 13px;
+    }
+
+    .icônes-sociales a {
+        font-size: 16px;
+    }
+
+    .bouton-vendeur {
+        font-size: 12px;
+    }
+}
+
+/* در 500px، نمایش تک‌ستونی */
+@media screen and (max-width: 500px) {
+    .cartes-vendeurs {
+        grid-template-columns: 1fr; /* تک‌ستونی */
+    }
+
+    .contenu-vendeur {
+        width: 90%;
+        margin: 0 auto;
+        padding: 12px;
+    }
+
+    .contenu-vendeur img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contenu-vendeur h5 {
+        font-size: 14px;
+    }
+
+    .contenu-vendeur p {
+        font-size: 12px;
+    }
+
+    .icônes-sociales a {
+        font-size: 14px;
+    }
+
+    .bouton-vendeur {
+        width: 80%;
+        padding: 8px;
+    }
+}

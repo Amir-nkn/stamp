@@ -1,0 +1,161 @@
+/*****************************Paramètres généraux de la carte*********************************************/
+.principal {
+    display: flex;
+    flex-direction: column;
+  
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.contenu {
+    max-width: 1200px; 
+    background: white;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    border: 1px solid var(--gris-pale);
+}
+/************************Paramètres du titre**************************************************/
+.principal > .titre-produit h1{
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+ }
+.aside{
+    display: flex;
+    flex-direction: column;
+}
+
+/*******************************Paramètres de la vitrine photo*******************************************/
+.vitrine-timbre {
+    position: relative;
+    width: 500px; 
+    text-align: center;
+    border: 1px solid var(--main-couleur);
+    padding: 10px;
+    overflow: hidden;
+}
+.vitrine-timbre img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 10px;
+   
+}
+
+.images-secondaires {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.images-secondaires img {
+    width: 80px;
+    height: auto;
+    border: 1px solid var(--main-couleur);
+    padding: 5px;
+    cursor: pointer;
+}
+/*****************************Paramètres du bouton Favoris*********************************************/
+.favoris-btn {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s ease;
+}
+.favoris-btn:hover svg path {
+    fill: red;
+    stroke: red;
+}
+.discription {
+    margin-top: 10px; 
+    max-width: 380px;
+    padding: 5px;
+}
+.discription p {
+    text-align: left;
+    line-height: 1.5; 
+    font-size: 16px;
+}
+.details {
+    width: 600px; 
+    padding: 10px;
+    cursor: pointer;
+}
+/****************************Paramètres de la section d'enchères**********************************************/
+.offre {
+    margin-top: 10px;
+    display: flex;
+    padding: 5px;
+}
+.offre input {
+    padding: 10px;
+    width: 140px;
+    margin-right: 10px;
+    border: 1px solid var(--blue-secondaire);
+}
+.offre button {
+    background: var(--blue-secondaire);
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 30px;
+}
+.offre button:hover {
+    background: var(--main-couleur);
+}
+/**************************** Section affichant les statistiques de l'enchère*******************************/
+.statistiques {
+    display: inline-flex; 
+    align-items: center;
+    gap: 21px; 
+    font-size: 16px;
+    max-width: fit-content;
+    margin-top: 20px;
+    background-color: var(--gris-pale); 
+    padding: 10px 12px;
+    border-radius: 5px;
+   
+}
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.stat strong {
+    font-size: 18px;
+    color: #000;
+}
+/**********************Section affichant les informations essentielles sur l'enchère**************************/
+.infos-enchere {
+   margin-top: 15px;
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    background: white;
+}
+.prix-actuel {
+    font-size: 20px;
+    color:var(--rouge);
+    font-weight: bold;
+}
+.compteur {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--rouge);
+}
+
+
+

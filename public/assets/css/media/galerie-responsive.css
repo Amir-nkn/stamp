@@ -1,0 +1,84 @@
+/* تنظیمات کلی برای موبایل */
+@media screen and (max-width: 700px) {
+    .galerie__contenu_principal {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    /* نمایش دو به دو در 700px */
+    .galerie {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* دو ستون */
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    .vignette {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--blanc);
+        border: 1px solid var(--main-couleur);
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .vignette img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: contain;
+    }
+
+    .galerie__titre h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .details-secondaires {
+        font-size: 12px;
+        margin-top: auto;
+    }
+}
+
+/* در 600px، همچنان دو به دو اما کوچکتر */
+@media screen and (max-width: 600px) {
+    .galerie {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vignette {
+        padding: 8px;
+    }
+
+    .vignette img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* در 500px، نمایش تک‌ستونی */
+@media screen and (max-width: 500px) {
+    .galerie {
+        grid-template-columns: 1fr; /* تک‌ستونی */
+    }
+
+    .vignette {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .vignette img {
+        width: 100%;
+    }
+
+    .galerie__titre h3 {
+        font-size: 18px;
+    }
+
+    .details-secondaires {
+        font-size: 10px;
+    }
+}

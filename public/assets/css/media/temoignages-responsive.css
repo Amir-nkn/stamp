@@ -1,0 +1,91 @@
+@media screen and (max-width: 700px) {
+    /* نمایش نظرات به صورت دو به دو با Flexbox */
+    .avis-enchere {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* تنظیمات کارت‌های نظر */
+    .commentaire {
+        width: calc(50% - 10px); /* دو کارت در یک ردیف */
+        max-width: 250px; /* محدود کردن عرض کارت‌ها */
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 10px;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* بهبود نمایش نام کاربر و ستاره‌ها */
+    .nom-utilisateur {
+        font-size: 16px;
+        text-align: center;
+        color: var(--blue-secondaire);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* ستاره‌ها در یک خط بمانند */
+    .nom-utilisateur strong {
+        display: block;
+    }
+
+    .nom-utilisateur .stars {
+        white-space: nowrap;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    /* محدود کردن متن نظرات */
+    .texte-avis {
+        font-size: 14px;
+        text-align: justify;
+        max-height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* تاریخ در جای درست نمایش داده شود */
+    .date-avis {
+        font-size: 12px;
+        color: #666;
+        margin-top: auto;
+    }
+
+    /* دکمه‌ی "Laisser un avis" درست نمایش داده شود */
+    .ajouter-avis {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        display: block;
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+}
+
+/* در 500px و کمتر، همچنان دو به دو نمایش داده شود */
+@media screen and (max-width: 500px) {
+    .avis-enchere {
+        justify-content: space-around;
+    }
+}
+
+/* در 400px و کمتر، نظرات تک‌ستونی شوند */
+@media screen and (max-width: 400px) {
+    .avis-enchere {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .commentaire {
+        width: 90%; /* هر نظر کل عرض را بگیرد */
+    }
+}

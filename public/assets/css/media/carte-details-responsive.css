@@ -1,0 +1,92 @@
+
+/* Responsive adjustments */
+@media (width: 500px) {
+  
+    .principal {
+      padding: 10px;
+      overflow-x: hidden;
+    }
+  
+    .titre-produit h1 {
+      font-size: 1.5rem;
+    }
+  
+    .contenu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .aside {
+      flex: 1;
+      min-width: 300px;
+      padding: 15px;
+    }
+  
+    .details {
+      flex: 1;
+      min-width: 300px;
+    }
+  
+    .offre {
+      flex-direction: row;
+    }
+  
+    .offre input {
+      flex: 1;
+    }
+  
+    .offre button {
+      width: auto;
+    }
+    .favoris-btn{
+      padding: 5px;
+      position: absolute;
+      right: 5px;
+      top: 0;
+    }
+    .vitrine-timbre{
+        width: 80%;  /* کاهش عرض کلی */
+        max-width: 450px; /* حداکثر عرض */
+        align-items: center;
+        align-self: center;
+        padding: 25px;
+       
+    }
+.images-secondaires img{
+  border: none;
+border-right:1px solid var(--main-couleur);
+padding: 10px;
+}
+
+.images-secondaires img:last-child {
+  border:none;
+}
+
+    .accordion {
+        width: 60%;  /* کاهش عرض کلی */
+        max-width: 500px; /* حداکثر عرض */
+       padding: 15px;
+       
+    }
+    .accordion-header {
+        flex-direction: column; /* نمایش دکمه‌ها در ستون */
+        gap: 5px;
+        text-align: center;
+    }
+
+    .accordion button {
+        width: 100%;  /* تمام عرض را بگیرد */
+        font-size: 14px;  /* کوچکتر کردن متن دکمه‌ها */
+        padding: 8px;
+    }
+
+    .accordion-contenu {
+        width: 100%;
+        max-width: 500px; /* کاهش حداکثر عرض برای نمایش بهتر */
+    }
+
+    .accordion-contenu .contenu {
+        padding: 10px;
+        font-size: 14px;  /* کاهش اندازه متن داخل accordion */
+    }
+  }

@@ -1,0 +1,96 @@
+[id="navigation-secondaire"]{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: var(--blanc);
+    border-top: 2px solid var(--main-couleur);
+    border-left: 2px solid var(--main-couleur);
+    border-right: 2px solid var(--main-couleur);
+}
+.logo > a img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+
+}
+
+[id="navigation-secondaire"] > .logo a{
+    display: flex;
+}
+
+.barre-de-recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.barre-de-recherche input {
+    width: 250px;
+    padding: 9px;
+    border: 1px solid var(--main-couleur);
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+.bouton-de-recherche {
+    padding: 9px 12px;
+    border: 1px solid var(--main-couleur);
+    background: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+.bouton-de-recherche:hover{
+    color: white;
+    background-color: var(--blue-secondaire);
+}
+.section-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+.compte{
+    border: 1px solid var(--main-couleur);
+    padding: 5px 10px;
+    background: white;
+    cursor: pointer;
+}
+.compte:hover{
+    color: white;
+    background-color: var(--blue-secondaire);
+}
+.devise {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.devise-deroulant {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    margin-top: 10px;
+    z-index: 1;
+}
+.devise-deroulant li {
+    padding: 8px;
+    cursor: pointer;
+}
+.section-icon span::after {
+    content: "▼"; 
+    color:var(--main-couleur);
+  }
+  .dollar-sign {
+    font-size: 20px; 
+    margin-right: 5px; 
+}
+.fa-dollar-sign {
+    color:var(--main-couleur); 
+    font-size: 16px;
+    margin-right: 2px;
+}

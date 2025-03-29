@@ -1,0 +1,124 @@
+@media (max-width: 500px) {
+    .contenu-sur-image {
+        padding: 10px;
+       
+    }
+    .contenu-sur-image > img {
+        object-position: center;
+        min-height: 60vh; /* کاهش ارتفاع برای نمایش بهتر */
+        
+    }
+    .contenu-sur-image div h1 {
+        font-size: 28px; /* کوچک‌تر برای نمایش بهتر */
+    }
+    .contenu-sur-image  div p {
+        font-size: 14px;
+    }
+    .bouton {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenu-sur-image {
+        padding: 15px;
+    }
+    .contenu-sur-image > img {
+        object-position: center;
+        height: 60vh;
+    }
+    .contenu-sur-image  div h1 {
+        font-size: 32px;
+    }
+    .contenu-sur-image   div p {
+        font-size: 14px;
+    }
+    .bouton {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .contenu-sur-image {
+        padding: 20px;
+    }
+    .contenu-sur-image > img {
+        object-position: top center;
+        height: 80vh;
+    }
+    .contenu-sur-image  div h1 {
+        font-size: 45px;
+    }
+    .contenu-sur-image  div p {
+        font-size: 16px;
+    }
+    .bouton {
+        font-size: 16px;
+        padding: 7px 12px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .contenu-sur-image {
+        padding: 30px;
+    }
+    .contenu-sur-image > img {
+        object-position: center;
+        height: 90vh;
+    }
+    .contenu-sur-image  div h1 {
+        font-size: 61px;
+    }
+    .contenu-sur-image  div p {
+        font-size: 20px;
+    }
+    .bouton {
+        font-size: 20px;
+        padding: 10px 16px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .contenu-sur-image {
+        padding: 40px;
+    }
+    .contenu-sur-image > img {
+        object-position: center;
+        height: 100vh;
+    }
+    .contenu-sur-image  div h1 {
+        font-size: 75px;
+    }
+    .contenu-sur-image  div p {
+        font-size: 22px;
+    }
+    .bouton {
+        font-size: 24px;
+        padding: 12px 18px;
+    }
+}
+
+/* 📌 تنظیم پس‌زمینه برای تصاویر در اندازه‌های مختلف */
+@media (max-width: 500px) {
+    .hero {
+        background-image: url('img/stamp-400.webp');
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media (min-width: 501px) and (max-width: 1024px) {
+    .hero {
+        background-image: url('img/stamp-800.webp');
+        background-size: cover;
+        background-position: center;
+    }
+}
+@media (min-width: 1025px) {
+    .hero {
+        background-image: url('img/stamp-1200.webp');
+        background-size: cover;
+        background-position: center;
+    }
+}

@@ -1,0 +1,375 @@
+
+
+  
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .login-form form {
+    background: #003366;
+    border-radius: 30px;
+    padding: 40px 35px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4),
+                -10px -10px 20px rgba(255, 255, 255, 0.1),
+                inset 0 0 0 2px #B8860B;
+    border: 2px solid #B8860B;
+    position: relative;
+  }
+  
+  .login-form form::before {
+    content: "";
+    position: absolute;
+    top: -10px; left: -10px;
+    right: -10px; bottom: -10px;
+    background: linear-gradient(45deg, #1C39BB, #003366);
+    z-index: -1;
+    border-radius: 35px;
+    box-shadow: 0 0 20px rgba(184, 134, 11, 0.3);
+  }
+  
+  .login-form form h2 {
+    margin-bottom: 25px;
+    color: #FFD700;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  .login-form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #D1D1D1;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    background: #1C39BB;
+    border: 2px solid #B8860B;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-top: 5px;
+    width: 100%;
+    color: #fff;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.5),
+                inset -2px -2px 8px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    align-self: center;
+  }
+  
+  .login-form input[type="email"]::placeholder,
+  .login-form input[type="password"]::placeholder {
+    color: #e0e0e0;
+  }
+  
+  .login-form input[type="email"]:focus,
+  .login-form input[type="password"]:focus {
+    outline: none;
+    background: #223d9c;
+    box-shadow: 0 0 5px 2px rgba(184, 134, 11, 0.5);
+  }
+  
+  .login-form input[type="submit"].btn {
+    background: linear-gradient(to right, #B8860B, #e0c070);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-top: 25px;
+    width: 100%;
+   color: white;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-form input[type="submit"].btn:hover {
+    background: linear-gradient(to right, #e6b800, #fff8dc);
+    color:black;
+    box-shadow: inset 0 0 10px #fff3cd, 0 0 10px #B8860B;
+  }
+  
+
+
+
+
+  .stamp-card {
+    background: #003366;
+    border-radius: 30px;
+    padding: 40px 35px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4),
+                -10px -10px 20px rgba(255, 255, 255, 0.05),
+                inset 0 0 0 2px #B8860B;
+    border: 2px solid #B8860B;
+    position: relative;
+    color: #fff;
+  }
+  
+  .stamp-card h2 {
+    color: #FFD700;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  .stamp-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .stamp-card label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #D1D1D1;
+    gap: 6px;
+  }
+  
+  .input-field,
+  .stamp-card select {
+    background: #1C39BB;
+    border: 2px solid #B8860B;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.5),
+                inset -2px -2px 8px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .input-field:focus,
+  .stamp-card select:focus {
+    outline: none;
+    background: #223d9c;
+    box-shadow: 0 0 5px 2px rgba(184, 134, 11, 0.5);
+  }
+  
+  .stamp-card .btn {
+    background: linear-gradient(to right, #B8860B, #e0c070);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.6);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    align-self: center;
+  }
+  
+  .stamp-card .btn:hover {
+    background: linear-gradient(to right, #e6b800, #fff8dc);
+    color:black;
+    box-shadow: inset 0 0 10px #fff3cd, 0 0 10px #B8860B;
+  }
+  
+  .stamp-card .btn.back {
+    background: #383838;
+    color: #D1D1D1;
+    border: 2px solid #B8860B;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .stamp-card .btn.back:hover {
+    background: #B8860B;
+    color: #003366;
+  }
+  
+  .error {
+    color: #FFD700;
+    font-size: 13px;
+    padding-left: 10px;
+  }
+  
+  .stamp-card select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFD700' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 14px;
+    padding-right: 40px;
+  }
+  
+
+
+
+
+
+
+
+
+  .custom-table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #003366;
+    color: #fff;
+    border: 2px solid #B8860B;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    font-size: 14px;
+  }
+  
+  .custom-table th {
+    background-color: #1C39BB;
+    color: #FFD700;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-bottom: 2px solid #B8860B;
+    text-align: left;
+  }
+  
+  .custom-table td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #B8860B;
+    word-break: break-word;
+  }
+  
+  .custom-table tr:nth-child(even) {
+    background-color: #0f2a5e;
+  }
+  
+  .user-table-title,
+  .logs-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+   
+  }
+  
+  
+
+  .custom-table .btn {
+    background: linear-gradient(to right, #B8860B, #e0c070);
+    color: #003366;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(184, 134, 11, 0.4);
+    transition: 0.3s ease;
+  }
+  
+  .custom-table.btn:hover {
+    background: linear-gradient(to right, #FFD700, #fff8dc);
+    color: #1C39BB;
+    box-shadow: inset 0 0 10px #fff3cd, 0 0 10px #B8860B;
+  }
+
+
+
+  .welcome-message{
+    margin: 100px auto;
+  }
+
+
+
+
+  .user-details-card {
+    background: #003366;
+    color: #fff;
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 25px;
+    border: 2px solid #B8860B;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .user-details-card h1 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  .user-details-card p {
+    margin: 12px 0;
+    font-size: 16px;
+  }
+  
+  .user-details-card strong {
+    color: #FFD700;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-edit {
+    background: linear-gradient(to right, #1C39BB, #3e5adf);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(28, 57, 187, 0.6);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-edit:hover {
+    background: linear-gradient(to right, #3e5adf, #B8860B);
+    color: #003366;
+    box-shadow: inset 0 0 10px #fff3cd;
+  }
+
+  .btn-edit.red {
+    background: linear-gradient(to right, #a94442, #e74c3c);
+    box-shadow: 0 4px 10px rgba(231, 76, 60, 0.5);
+  }
+  
+  .btn-edit.red:hover {
+    background: linear-gradient(to right, #e74c3c, #FFD700);
+    color: #003366;
+  }
+  
+
+  .btn.back {
+    display: block;
+    margin: 30px auto 0;
+    background: #383838;
+    color: #D1D1D1;
+    border: 2px solid #B8860B;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+  }
+  
+  .btn.back:hover {
+    background: #B8860B;
+    color: #003366;
+  }
+  

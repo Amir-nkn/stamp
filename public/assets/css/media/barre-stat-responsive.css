@@ -1,0 +1,81 @@
+/* 📌 استایل پایه برای `barre-stats` */
+.barre-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--blanc);
+    padding: 15px;
+    margin-top: 20px; /* فاصله از منوی اصلی */
+   
+}
+
+/* 📌 استایل آیتم‌های داخل `barre-stats` */
+.element-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.chiffre-stat {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--blue-secondaire);
+}
+
+.libelle-stat {
+    font-size: 14px;
+    color: var(--gris);
+}
+
+/* 📌 واکنش‌گرایی برای `800px` و کمتر */
+@media (max-width: 800px) {
+    .barre-stats {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 70px; /* جلوگیری از هم‌پوشانی با منو برگر */
+        padding: 10px;
+    }
+
+    .chiffre-stat {
+        font-size: 18px;
+    }
+
+    .libelle-stat {
+        font-size: 12px;
+    }
+
+    /* 📌 منوی برگر */
+    .menu-container {
+        position: relative;
+        z-index: 1000; /* اطمینان از نمایش بالاتر از همه */
+    }
+
+    .menu-burger {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1100; /* اولویت بیشتر از `barre-stats` */
+    }
+
+    /* 📌 وقتی منو باز شد، `barre-stats` پایین‌تر برود */
+    .menu-container.open + .barre-stats {
+        margin-top: 120px; /* بسته به ارتفاع منو مقدار را تنظیم کن */
+    }
+}
+
+/* 📌 واکنش‌گرایی برای `500px` */
+@media (max-width: 500px) {
+    .barre-stats {
+        margin-top: 90px; /* کمی بیشتر از 800px */
+    }
+
+    .chiffre-stat {
+        font-size: 16px;
+    }
+
+    .libelle-stat {
+        font-size: 12px;
+    }
+}

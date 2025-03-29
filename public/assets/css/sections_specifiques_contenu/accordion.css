@@ -1,0 +1,118 @@
+.accordion-header {
+    display: flex;
+    gap: 10px;
+    background: var( --couleur-secondaire);
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--main-couleur);
+}
+.accordion-contenu .contenu {
+    display: none;
+    width: 100%;
+    background: white;
+    border: 1px solid var(--gris-pale);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.accordion-contenu .contenu.active {
+    display: block;
+}
+
+
+.accordion button {
+    padding: 12px 25px; 
+    background:var(--blanc);
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid var(--gris-pale);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+.accordion button:hover {
+    background: #ccc;
+}
+
+
+.accordion button.active {
+   
+    border: 2px solid var(--main-couleur);
+
+}
+.accordion-contenu h2 {
+    margin-bottom: 15px; 
+    font-size: 22px; 
+}
+.accordion-contenu p {
+    margin: 10px 0; 
+    font-size: 16px;
+}
+.accordion-contenu p strong{
+    color: var(--blue-secondaire);
+}
+.contenu_historique ul {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.contenu_historique li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.contenu_historique li:hover {
+    color: var(--blue-secondaire);
+    text-decoration: underline black;
+}
+.contenu_paiment{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contenu_paiment p a {
+    font-size: 16px;
+    text-decoration: underline var(--blue-secondaire);
+}
+.contenu_paiment p a:hover{
+text-decoration: underline black ;
+color: var(--blue-secondaire);
+}
+.paiement-icons {
+        display: flex;
+        gap: 10px;
+        font-size: 40px; 
+        margin-top: 15px;
+}
+.paiement-icons i {
+    color: var(--blue-pale); 
+}
+.paiement-icons i:hover{
+    color: var(--main-couleur);
+}
+.paiement-icons i {
+    transition: color 0.3s ease; 
+}
+.liste-securite {
+    font-size: 16px;
+}
+.liste-securite li {
+    margin: 15px 0;
+    gap: 8px; 
+    margin-bottom: 5px;
+}
+.liste-securite i {
+    font-size: 18px;
+    color: #28a745; 
+}
+.liste-securite li:hover {
+    color: var(--blue-secondaire); 
+    text-decoration: underline;
+}
+.liste-securite li i {
+    transition: color 0.3s ease; 
+}
+.liste-securite li:hover i {
+    color: var(--blue-secondaire); 
+}
+
+
+
