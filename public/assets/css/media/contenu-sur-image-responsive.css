@@ -5,11 +5,11 @@
     }
     .contenu-sur-image > img {
         object-position: center;
-        min-height: 60vh; /* کاهش ارتفاع برای نمایش بهتر */
+        min-height: 60vh; 
         
     }
     .contenu-sur-image div h1 {
-        font-size: 28px; /* کوچک‌تر برای نمایش بهتر */
+        font-size: 28px;
     }
     .contenu-sur-image  div p {
         font-size: 14px;
@@ -100,7 +100,7 @@
     }
 }
 
-/* 📌 تنظیم پس‌زمینه برای تصاویر در اندازه‌های مختلف */
+
 @media (max-width: 500px) {
     .hero {
         background-image: url('img/stamp-400.webp');

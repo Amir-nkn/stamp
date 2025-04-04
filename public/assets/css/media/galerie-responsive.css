@@ -1,14 +1,14 @@
-/* تنظیمات کلی برای موبایل */
+
 @media screen and (max-width: 700px) {
     .galerie__contenu_principal {
         padding: 10px;
         max-width: 100%;
     }
 
-    /* نمایش دو به دو در 700px */
+ 
     .galerie {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* دو ستون */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 10px;
         max-width: 100%;
     }
@@ -43,7 +43,7 @@
     }
 }
 
-/* در 600px، همچنان دو به دو اما کوچکتر */
+
 @media screen and (max-width: 600px) {
     .galerie {
         grid-template-columns: repeat(2, 1fr);
@@ -59,10 +59,10 @@
     }
 }
 
-/* در 500px، نمایش تک‌ستونی */
+
 @media screen and (max-width: 500px) {
     .galerie {
-        grid-template-columns: 1fr; /* تک‌ستونی */
+        grid-template-columns: 1fr; 
     }
 
     .vignette {

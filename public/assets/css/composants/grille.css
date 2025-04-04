@@ -89,6 +89,7 @@ article{
 }
 .grille-img {
     min-width: 150px;
+    width: 100%;
     height: 150px; 
     border-radius: 8px;
     overflow: hidden;
@@ -137,5 +138,37 @@ article{
     pointer-events: none;
     cursor: default;
 }
+
+
+/* .grille > * {
+    height: 100%; /* کارت‌ها تا حد ممکن مساوی بشن */
+ */
+
+
+/* .carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+} */
+
+.carte > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .carte h3 {
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 4.5em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+
+
+
 
 

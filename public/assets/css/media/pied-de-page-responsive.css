@@ -1,6 +1,6 @@
-/* تنظیمات کلی برای موبایل */
+
 @media screen and (max-width: 700px) {
-    /* تنظیمات اصلی پاورقی */
+
     [id="pied-de-page"] {
         text-align: center;
         padding: 20px;
@@ -21,7 +21,7 @@
         border: none !important;
     }
 
-    /* نمایش صحیح فرم خبرنامه */
+
     .bulletin-d-information {
         flex-direction: column;
         gap: 10px;
@@ -39,7 +39,7 @@
         border-radius: 5px;
     }
 
-    /* آیکون‌های شبکه اجتماعی */
+  
     .social-media {
         justify-content: center;
         gap: 10px;
@@ -49,7 +49,7 @@
         font-size: 20px;
     }
 
-    /* تنظیمات بخش دوم پاورقی */
+
     .pied-de-page-secondaire {
         flex-direction: column;
         text-align: center;
@@ -63,7 +63,7 @@
     }
 }
 
-/* در 600px و کمتر */
+
 @media screen and (max-width: 600px) {
     .conteneur-pied-de-page {
         gap: 10px;
@@ -83,18 +83,18 @@
     }
 }
 
-/* 📌 در 500px و کمتر */
+
 @media screen and (max-width: 500px) {
     .conteneur-pied-de-page {
         flex-direction: column;
         align-items: center;
-        gap: 60px; /* فاصله بین بخش‌ها */
+        gap: 60px;
         text-align: center;
     }
 
   
 
-    /* 📌 تنظیمات بخش متن */
+
     .section-pied-page-compte {
         padding: 15px;
         max-width: 90%;
@@ -119,7 +119,7 @@
 
 
 
-    /* 📌 تنظیم فیلد ورودی ایمیل */
+  
     .bulletin-d-information input {
         width: 100%;
         font-size: 14px;
@@ -130,7 +130,6 @@
         font-size: 14px;
     }
 
-    /* 📌 متن فوتر */
     .pied-de-page-bas {
         font-size: 12px;
         text-align: center;

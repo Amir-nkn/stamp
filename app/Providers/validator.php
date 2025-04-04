@@ -83,7 +83,7 @@ class Validator{
         return $this;
     }
 
-    // Vérifie que la valeur est unique dans la base (via modèle donné)
+    // Vérifie que la valeur est unique dans la BASE (via modèle donné)
     public function unique($model){
         $model = 'App\\Models\\'.$model;
         $model = new $model;

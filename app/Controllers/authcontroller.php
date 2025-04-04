@@ -36,7 +36,9 @@ class AuthController{
 
             if($check){
                 // L'utilisateur est authentifié, on affiche la page d'accueil avec la session
-                return View::render('home', ['session'=>$_SESSION]);
+                $_SESSION['user_name'] = $data['username']; 
+                header('Location: ' . BASE); 
+                exit;
 
             }else{
                 // Les identifiants sont incorrects
@@ -58,7 +60,7 @@ class AuthController{
         $usernameLog = $_SESSION['user_name'] ?? '������'; // Valeur par défaut si non défini
         $page = '���� �� �����'; // Nom de la page visitée
 
-        // Connexion à la base de données
+        // Connexion à la BASE de données
         $db = new \PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';port=' . DB_PORT . ';charset=utf8', DB_USER, DB_PASS);
 
         // Prépare et exécute l'insertion dans la table des logs
@@ -75,13 +77,14 @@ class AuthController{
         session_destroy();
 
         // Redirige vers la page de connexion
-        return View::redirect('login');
+        header('Location: ' . BASE);
+
     }
 
     // Affiche les journaux des visites
     public function showLogs()
     {
-        // Connexion à la base de données
+        // Connexion à la BASE de données
         $db = new PDO('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';port=' . DB_PORT . ';charset=utf8', DB_USER, DB_PASS);
 
         // Récupère tous les logs triés par date de visite (descendant)

@@ -17,8 +17,8 @@ class View {
         $twig = new Environment($loader);
 
         // Ajoute des variables globales disponibles dans toutes les vues
-        $twig->addGlobal('asset', asset);            // Fonction asset pour les chemins vers les fichiers
-        $twig->addGlobal('base', BASE);              // Chemin de base du projet
+        $twig->addGlobal('ASSET', ASSET);            // Fonction asset pour les chemins vers les fichiers
+        $twig->addGlobal('BASE', BASE);              // Chemin de BASE du projet
         $twig->addGlobal('session', $_SESSION);      // Session complète accessible dans les templates
 
         // Détermine si l'utilisateur est invité (non connecté)

@@ -1,6 +1,6 @@
 ﻿<?php
 define('BASE', '/stamp_auction');
-define('asset', BASE . '/public/assets');
+define('ASSET', BASE . '/public/assets');
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'stamp_auction');

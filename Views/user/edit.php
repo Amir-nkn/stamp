@@ -3,7 +3,7 @@
 <div class="stamp-card">
     <h2>Edit User</h2>
 
-    <form action="{{ base }}/user/edit" method="post" class="form-container">
+    <form action="{{ BASE }}/user/edit" method="post" class="form-container">
 
         <input type="hidden" name="id" value="{{ user.id }}">
 
@@ -43,7 +43,7 @@
         <input type="submit" value="Update" class="btn">
     </form>
 
-    <a href="{{ base }}/user" class="btn back">Back to users</a>
+    <a href="{{ BASE }}/user" class="btn back">Back to users</a>
 </div>
 
 

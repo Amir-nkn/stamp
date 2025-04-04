@@ -1,8 +1,8 @@
-/* در 700px، نمایش دو به دو */
+
 @media screen and (max-width: 700px) {
     .conteneur-nouvelles {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* دو کارت در یک ردیف */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 15px;
         justify-content: center;
     }
@@ -30,7 +30,7 @@
     }
 }
 
-/* در 600px، همچنان دو به دو اما کمی کوچک‌تر */
+
 @media screen and (max-width: 600px) {
     .conteneur-nouvelles {
         grid-template-columns: repeat(2, 1fr);
@@ -60,10 +60,10 @@
     }
 }
 
-/* در 500px، نمایش تک‌ستونی */
+
 @media screen and (max-width: 500px) {
     .conteneur-nouvelles {
-        grid-template-columns: 1fr; /* تک‌ستونی */
+        grid-template-columns: 1fr;
     }
 
     .element-nouvelle {

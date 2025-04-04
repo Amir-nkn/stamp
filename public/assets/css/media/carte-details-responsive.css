@@ -45,8 +45,8 @@
       top: 0;
     }
     .vitrine-timbre{
-        width: 80%;  /* کاهش عرض کلی */
-        max-width: 450px; /* حداکثر عرض */
+        width: 80%; 
+        max-width: 450px; 
         align-items: center;
         align-self: center;
         padding: 25px;
@@ -63,30 +63,30 @@ padding: 10px;
 }
 
     .accordion {
-        width: 60%;  /* کاهش عرض کلی */
-        max-width: 500px; /* حداکثر عرض */
+        width: 60%;  
+        max-width: 500px; 
        padding: 15px;
        
     }
     .accordion-header {
-        flex-direction: column; /* نمایش دکمه‌ها در ستون */
+        flex-direction: column;
         gap: 5px;
         text-align: center;
     }
 
     .accordion button {
-        width: 100%;  /* تمام عرض را بگیرد */
-        font-size: 14px;  /* کوچکتر کردن متن دکمه‌ها */
+        width: 100%; 
+        font-size: 14px;  
         padding: 8px;
     }
 
     .accordion-contenu {
         width: 100%;
-        max-width: 500px; /* کاهش حداکثر عرض برای نمایش بهتر */
+        max-width: 500px; 
     }
 
     .accordion-contenu .contenu {
         padding: 10px;
-        font-size: 14px;  /* کاهش اندازه متن داخل accordion */
+        font-size: 14px; 
     }
   }

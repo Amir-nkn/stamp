@@ -11,16 +11,16 @@
     </p>
 
     <div class="button-group">
-        <a href="{{ base }}/user/edit?id={{ user.id }}" class="btn-edit">Edit</a>
+        <a href="{{ BASE }}/user/edit?id={{ user.id }}" class="btn-edit">Edit</a>
 
-        <form action="{{ base }}/user/delete" method="post" style="display:inline;">
+        <form action="{{ BASE }}/user/delete" method="post" style="display:inline;">
             <input type="hidden" name="id" value="{{ user.id }}">
             <input type="submit" value="Delete" class="btn-edit red"
                    onclick="return confirm('Are you sure you want to delete this user?');">
         </form>
     </div>
 
-    <a href="{{ base }}/user" class="btn back">Back to users</a>
+    <a href="{{ BASE }}/user" class="btn back">Back to users</a>
 </div>
 
 

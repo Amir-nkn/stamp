@@ -8,12 +8,12 @@ Ce pied de page regroupe plusieurs sections importantes :
 - Un formulaire d'abonnement à la newsletter.
 - Une section secondaire avec des icônes de réseaux sociaux et un message de copyright.
 -->
-<link rel="stylesheet" href="{{asset}}/css/main.css">
+<link rel="stylesheet" href="{{ASSET}}/css/main.css">
 <footer id="pied-de-page">
     <div class="conteneur-pied-de-page">
         <div class="section-pied-de-page logo-section">
             <div class="logo">    
-                <a href="index.html"> <img src="{{asset}}/img/Logo.webp" alt="Logo-pied-de-page"></a>
+                <a href="index.html"> <img src="{{ASSET}}/img/Logo.webp" alt="Logo-pied-de-page"></a>
                  </div>
         </div>
       

@@ -13,7 +13,7 @@ if (isset($_SESSION['error_msg'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="{{asset}}/css/main.css">
+    <link rel="stylesheet" href="{{ASSET}}/css/main.css">
 </head>     
 <body>
 

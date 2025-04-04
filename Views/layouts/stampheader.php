@@ -16,12 +16,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Feuilles de style CSS -->
-    <link rel="stylesheet" href="{{asset}}/css/main.css">
+    <link rel="stylesheet" href="{{ASSET}}/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
 
     <!-- Fichiers JavaScript -->
-    <script src="{{asset}}/js/accordion.js" type="module"></script>
-    <script src="{{asset}}/js/main.js" type="module"></script>
+    <script src="{{ASSET}}/js/accordion.js" type="module"></script>
+    <script src="{{ASSET}}/js/main.js" type="module"></script>
 
 </head>
 
@@ -37,7 +37,10 @@
             <nav id="navigation-secondaire">
                 <!-- Section du logo -->
                 <div class="logo">    
-                    <a href="index.php"><img src="{{asset}}/img/Logo.webp" alt="Logo-navigation"></a>
+                <a href="{{ BASE }}/">
+    <img src="{{ ASSET }}/img/Logo.webp" alt="Logo-navigation">
+</a>
+
                 </div>
                 
                 <!-- Barre de recherche -->
@@ -53,13 +56,13 @@
                     <p>Bienvenue, {{ session['user_name'] ?? 'Guest' }}</p>
 
 {% if session['privilege_id'] is defined and session['privilege_id'] == 1 %}
-   <a href="{{base}}/login"       class="compte">Admin</a>
+   <a href="{{BASE}}/login"       class="compte">Admin</a>
 {% endif %}
 {% if session['user_name'] is defined %}
-   <a href="{{base}}/logout" class="compte">Log Out</a>
+   <a href="{{BASE}}/logout" class="compte">Log Out</a>
 {% else %}
-   <a href="{{base}}/login"       class="compte">Mon compte</a>
-   <a href="{{base}}/user/create" class="compte">SginUp</a>
+   <a href="{{BASE}}/login"       class="compte">Mon compte</a>
+   <a href="{{BASE}}/user/create" class="compte">S'inscrire</a>
 {% endif %}
 
                    <div class="devise" id="devise-selector">
@@ -84,6 +87,16 @@
                             <li><a href="#">Conseils pour les collectionneurs</a></li>
                         </ul>
                     </li>
+
+                    <li class="menu-deroulant">
+                        <a class="gachete" href="#">Vendre</a>
+                        <ul class="contenu-deroulant">
+                            <li><a href="#">Mettre un timbre en vente</a></li>
+                            <li><a href="#">Mes ventes en cours</a></li>
+                            <li><a href="#">Historique des ventes</a></li>
+                        </ul>
+                    </li>
+
                     <li class="menu-deroulant">
                         <a class="gachete" href="#">Compte</a>
                         <ul class="contenu-deroulant">
@@ -109,7 +122,7 @@
     </header>
 
     <section class="contenu-sur-image">
-        <img src="{{asset}}/img/lord.webp" alt="lord">
+        <img src="{{ASSET}}/img/lord.webp" alt="lord">
         <div>
             <h1>Lord-stampee</h1>
             <p>Lord Stampee est une plateforme d'enchères pour timbres uniques et personnalisés. Participez pour acquérir des timbres exclusifs pour votre collection !</p>

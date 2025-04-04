@@ -4,7 +4,7 @@
 <div class="stamp-card">
     <h2>Add New User</h2>
 
-    <form action="{{ base }}/user/store" method="post">
+    <form action="{{ BASE }}/user/store" method="post">
 
         <label>Name:
             <input type="text" name="name" value="{{ user.name ?? '' }}" required class="input-field">
@@ -39,7 +39,7 @@
         </label>
 
         <input type="submit" value="Save" class="btn">
-        <a href="{{ base }}" class="btn back">Back to main</a>
+        <a href="{{ BASE }}" class="btn back">Back to main</a>
     </form>
 </div>
 

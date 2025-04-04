@@ -16,7 +16,7 @@
         margin: 8px 0;
     }
 
-    /* فرم به صورت ستونی در بیاید */
+ 
     #formulaire-encheres {
         flex-direction: column;
         gap: 10px;
@@ -37,7 +37,7 @@
     }
 }
 
-/* در 600px، تغییرات جزئی */
+
 @media screen and (max-width: 600px) {
     .inscription-encheres {
         width: 95%;
@@ -52,7 +52,7 @@
     }
 }
 
-/* در 500px، فرم کاملاً وسط و دکمه بزرگ‌تر */
+
 @media screen and (max-width: 500px) {
     .inscription-encheres {
         width: 100%;

@@ -1,8 +1,8 @@
-/* در 700px و 600px، نمایش دو به دو */
+
 @media screen and (max-width: 700px) {
     .cartes-vendeurs {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* دو کارت در هر ردیف */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 15px;
         justify-content: center;
     }
@@ -40,7 +40,6 @@
     }
 }
 
-/* در 600px، همچنان دو به دو اما کوچکتر */
 @media screen and (max-width: 600px) {
     .cartes-vendeurs {
         grid-template-columns: repeat(2, 1fr);
@@ -78,10 +77,10 @@
     }
 }
 
-/* در 500px، نمایش تک‌ستونی */
+
 @media screen and (max-width: 500px) {
     .cartes-vendeurs {
-        grid-template-columns: 1fr; /* تک‌ستونی */
+        grid-template-columns: 1fr; 
     }
 
     .contenu-vendeur {

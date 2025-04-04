@@ -22,7 +22,7 @@
                 {{ privileges[user.privilege_id] is defined ? privileges[user.privilege_id] : 'Unknown' }}
             </td>
             <td>
-                <a href="{{ base }}/user/show?id={{ user.id }}" class="btn">Show</a>
+                <a href="{{ BASE }}/user/show?id={{ user.id }}" class="btn">Show</a>
             </td>
         </tr>
     {% endfor %}
