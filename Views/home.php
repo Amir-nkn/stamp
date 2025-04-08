@@ -119,15 +119,16 @@
                         <div>
                             <p class="identification">
                                 <span>code d'identification</span>
-                                <span>#{{ stamp.stamp_id }}</span>
+                                <span>#{{ stamp.stamp_code }}</span>
                             </p>
-                            <h3><a href="details.html?id={{ stamp.id }}">{{ stamp.details }}</a></h3>
+                            <h3><a href="{{BASE}}/stamp/show?id={{ stamp.id }}">{{ stamp.details }}</a></h3>
                         </div>
                         <div class="identification-secondaire">
-                            <p class="Prix">CAD ${{ stamp.price }}</p>
-                            <p class="info">
-                                <span>{{ stamp.time_left }} | {{ stamp.offers }} offre</span>
-                            </p>
+                             <p class="Prix">CAD ${{ stamp.price }}</p>
+                             <p class="info">
+                             <span>{{ stamp.time_left }} | {{ stamp.offers }} offre</span>
+                             </p>
+                             <span style="display: inline;"><a href="{{BASE}}/stamp/edit?id={{ stamp.id }}">Edit Item</a></span>
                         </div>
                     </article>
                 {% else %}

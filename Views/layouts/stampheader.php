@@ -91,9 +91,7 @@
                     <li class="menu-deroulant">
                         <a class="gachete" href="#">Vendre</a>
                         <ul class="contenu-deroulant">
-                            <li><a href="#">Mettre un timbre en vente</a></li>
-                            <li><a href="#">Mes ventes en cours</a></li>
-                            <li><a href="#">Historique des ventes</a></li>
+                            <li><a href="{{BASE}}/stamp/create">Mettre un timbre en vente</a></li>
                         </ul>
                     </li>
 

@@ -8,7 +8,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/config.php';
 
 // Inclusion du fichier de définition des routes
-require_once __DIR__ . '/app/Routes/web.php';
+require_once __DIR__ . '/App/Routes/web.php';
 
 // var_dump($_SERVER);
 // die();

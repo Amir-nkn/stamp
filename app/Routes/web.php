@@ -18,6 +18,7 @@ Route::post('/stamp/store', 'StampController@store');
 Route::get('/stamp/edit', 'StampController@edit');
 Route::post('/stamp/edit', 'StampController@update');
 Route::post('/stamp/delete', 'StampController@delete');
+Route::post('/stamp/newbid', 'StampController@newbid');
 
 Route::get('/user', 'UserController@index');
 Route::get('/user/show', 'UserController@show');
