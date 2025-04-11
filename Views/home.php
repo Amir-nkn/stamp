@@ -1,7 +1,6 @@
 ﻿{{ include('layouts/stampheader.php', { title: 'Registration' }) }}
 <main>
 
-
 <header class="titre-principal">
                 <h2>Nouvellement répertorié</h2>
                 <p>Découvrez notre collection de timbres rares et uniques,
@@ -11,7 +10,6 @@
 <div class="grille-filtre">
     <div class="filtre">
     <!-- Barre laterale pour les options de filtre -->
-
 
     <aside class="barre-laterale">
             <div class="conteneur-filtre">
@@ -29,18 +27,24 @@
 
            <!-- Pays d'origine filter -->
            <div class="element-filtre">
-                            <div class="titre-filtre">Pays d'origine:</div>
-                            <div class="conteneur-selection">
-                                <label for="country-select">Choisir</label>
-                                <select id="country-select">
-                                    <option>France</option>
-                                    <option>USA</option>
-                                    <option>Japon</option>
-                                </select>
-                            </div>
-                        </div>
 
-        
+<div class="titre-filtre">Pays d'origine:</div>
+<form action="{{ BASE }}/stamp/filterstamp" method="GET">
+    <div class="conteneur-selection">
+        <label for="country-select"></label>
+        <select name="country_id" id="country-select" onchange="this.form.submit()">
+            <option value=""> Select Country </option>
+            {% for country in countries %}
+               <option value="{{ country.id }}"
+               {% if country.id ~ '' == app.request.get('country_id') ~ '' %}selected{% endif %}>
+                  {{ country.name }}
+               </option>
+            {% endfor %}
+        </select>
+    </div>
+</form>
+</div>
+
          <!-- Catégories filter -->
          <div class="element-filtre">
                             <div class="titre-filtre">Catégories:</div>
@@ -70,8 +74,8 @@
                             </ul>
                         </div>
 
-          <!-- Popularité filter -->
-          <div class="element-filtre">
+                        <!-- Popularité filter -->
+                        <div class="element-filtre">
                             <div class="titre-filtre">Popularité:</div>
                             <ul>
                                 <li><input type="checkbox" id="popular"> <label for="popular">Très populaire</label>
@@ -81,29 +85,36 @@
                             </ul>
                         </div>
 
+         <div class="element-filtre">
+<div class="titre-filtre">couleurs:</div>
+<form action="{{ BASE }}/stamp/filterstamp" method="GET">
+    <div class="conteneur-selection">
+        <label for="color-select"></label>
+        <select name="color_id" id="color-select" onchange="this.form.submit()">
+             {% if not app.request.get('color_id') %}
+                <option value=""> choisir-couleurs </option>
+             {% endif %}            
+            {% for color in colors %}
+                <option value="{{ color.id }}">{{ color.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</form>
 
-                 <div class="element-filtre">
-                            <div class="titre-filtre">couleurs:</div>
-                            <div class="conteneur-selection">
-                                <label for="country-select">Choisir</label>
-                                <select id="country-select">
-                                    <option>Rouge</option>
-                                    <option>Bleu</option>
-                                    <option>Jaune</option>
-                                    <option>Vert</option>
-                                    <option>Orange</option>
-                                    <option>Violet</option>
-                                    <option>Rose</option>
-                                    <option>Noir</option>
-                                    <option>Blanc</option>
-                                    <option>Gris</option>
-                                    <option>Marron</option>
-                                    <option>Beige</option>
-                                    
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+
+</div>
+<div class="element-filtre">
+<form action="{{ BASE }}/stamp/filterstamp" method="GET" style="margin-top: 20px;">
+    <div class="conteneur-selection">
+      
+    <ul><li><input type="checkbox" name="favorite" id="favorite-checkbox" 
+        {% if app.request.get('favorite') %}checked{% endif %}
+        onchange="this.form.submit()">
+        <label for="favorite-checkbox">Favoris</label></li> </ul>
+    </div>
+    </div>
+</form>
+</div>
                 </aside>
 
     <!-- Section des timbres -->
@@ -119,15 +130,16 @@
                         <div>
                             <p class="identification">
                                 <span>code d'identification</span>
-                                <span>#{{ stamp.stamp_id }}</span>
+                                <span>#{{ stamp.stamp_code }}</span>
                             </p>
-                            <h3><a href="details.html?id={{ stamp.id }}">{{ stamp.details }}</a></h3>
+                            <h3><a href="{{BASE}}/stamp/show?id={{ stamp.id }}">{{ stamp.details }}</a></h3>
                         </div>
                         <div class="identification-secondaire">
-                            <p class="Prix">CAD ${{ stamp.price }}</p>
-                            <p class="info">
-                                <span>{{ stamp.time_left }} | {{ stamp.offers }} offre</span>
-                            </p>
+                             <p class="Prix">CAD ${{ stamp.price }}</p>
+                             <p class="info">
+                             <span>{{ stamp.time_left }} | {{ stamp.offers }} offre</span>
+                             </p>
+                             <span style="display: inline;"><a href="{{BASE}}/stamp/edit?id={{ stamp.id }}">Edit Item</a></span>
                         </div>
                     </article>
                 {% else %}

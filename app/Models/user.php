@@ -6,7 +6,7 @@ use App\Models\CRUD;
 // La classe User hérite des méthodes CRUD pour interagir avec la base de données
 class User extends CRUD {
     // Nom de la table associée
-    protected $table = 'user';
+    protected $table = 'users';
 
     // Clé primaire
     protected $primaryKey = 'id';
@@ -30,7 +30,6 @@ class User extends CRUD {
             $_SESSION['user_name'] = $user['name'];
             $_SESSION['privilege_id'] = $user['privilege_id'];
             $_SESSION['fingerPrint'] = md5($_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR']);
-
             $this->logUserAction($user['name'], 'Login to system'); // Journalisation de la connexion
             return true;
         } 

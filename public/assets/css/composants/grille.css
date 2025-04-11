@@ -141,7 +141,7 @@ article{
 
 
 /* .grille > * {
-    height: 100%; /* کارت‌ها تا حد ممکن مساوی بشن */
+    height: 100%; 
  */
 
 
@@ -158,17 +158,16 @@ article{
     flex-direction: column;
 }
 
-/* .carte h3 {
-    margin: 8px 0;
-    font-size: 16px;
-    line-height: 1.5;
-    min-height: 4.5em; 
+
+
+
+.carte h3 {
+    display: block;
+    max-width: 20ch;           /* حداکثر ۲۵ کاراکتر نمایشی */
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-} */
-
-
-
-
+  }
+  
 
 

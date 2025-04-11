@@ -59,6 +59,62 @@
     padding: 5px;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-upload-zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    padding: 10px;
+    border: 1px dashed #999;
+    cursor: pointer;
+    color: #666;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.image-upload-zone:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+.small-image-upload {
+    width: 80px;
+    height: 80px;
+    border: 1px dashed var(--main-couleur);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--main-couleur);
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.small-image-upload:hover {
+    background-color: #ececec;
+}
+
 /*****************************Paramètres du bouton Favoris*********************************************/
 .favoris-btn {
     position: absolute;

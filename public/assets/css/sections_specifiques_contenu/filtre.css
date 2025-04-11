@@ -10,7 +10,7 @@
     margin-left: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-basis: 20ch;
-    max-height: 150vh;
+    max-height: 160vh;
     border: 2px solid var(--main-couleur);
 }
 .en-tête-barre-laterale {
@@ -34,6 +34,11 @@
     max-width: 250px; 
     overflow: hidden;
 }
+
+.element-filtre:last-child {
+    border: none;
+  }
+  
 .titre-filtre {
     font-family: 'Playfair Display', serif;
     font-weight: 600;

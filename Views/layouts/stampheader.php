@@ -88,15 +88,16 @@
                         </ul>
                     </li>
 
-                    <li class="menu-deroulant">
-                        <a class="gachete" href="#">Vendre</a>
-                        <ul class="contenu-deroulant">
-                            <li><a href="#">Mettre un timbre en vente</a></li>
-                            <li><a href="#">Mes ventes en cours</a></li>
-                            <li><a href="#">Historique des ventes</a></li>
-                        </ul>
-                    </li>
-
+<li class="menu-deroulant">
+    {% if session.user_name is defined %}
+        <a class="gachete" href="#">Vendre</a>
+        <ul class="contenu-deroulant">
+            <li><a href="{{BASE}}/stamp/create">Mettre un timbre en vente</a></li>
+        </ul>
+    {% else %}
+        <a class="gachete" href="#" onclick="return false;" title="Connectez-vous pour vendre">Vendre</a>
+    {% endif %}
+</li>
                     <li class="menu-deroulant">
                         <a class="gachete" href="#">Compte</a>
                         <ul class="contenu-deroulant">

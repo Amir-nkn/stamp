@@ -83,6 +83,16 @@
                         </ul>
                     </li>
 
+
+                    <li class="menu-deroulant">
+                        <a class="gachete" href="#">Vendre</a>
+                        <ul class="contenu-deroulant">
+                            <li><a href="#">Mettre un timbre en vente</a></li>
+                            <li><a href="#">Mes ventes en cours</a></li>
+                            <li><a href="#">Historique des ventes</a></li>
+                        </ul>
+                    </li>
+
                     <li class="menu-deroulant">
                         <a class="gachete" href="#">Compte</a>
                         <ul class="contenu-deroulant">
@@ -128,12 +138,23 @@
                                     stroke="black" stroke-width="2" stroke-linejoin="round" fill="none" />
                             </svg>
                         </button>
-                        <img src="public/assets/img/stamp/canada-stamp-75ii-queen-victoria-1-1898.webp" class="image-zoom"
-                            alt="Timbre du Canada">
+                        <label for="upload-main-image" class="image-upload-zone">
+                            <span>📷 Cliquez pour ajouter une image</span>
+                            <input type="file" id="upload-main-image" name="main_image" accept="image/*" hidden>
+                        </label>
                         <div class="images-secondaires">
-                            <img src="public/assets/img/stamp/canada-stamp-75ii-queen-victoria-1-1898.webp" alt="Détail 1">
-                            <img src="public/assets/img/stamp/canada-stamp-75ii-queen-victoria-1-1898.webp" alt="Détail 2">
-                            <img src="public/assets/img/stamp/canada-stamp-75ii-queen-victoria-1-1898.webp" alt="Détail 3">
+                            <label class="small-image-upload">
+                                <span>+</span>
+                                <input type="file" name="image_detail_1" accept="image/*" hidden>
+                            </label>
+                            <label class="small-image-upload">
+                                <span>+</span>
+                                <input type="file" name="image_detail_2" accept="image/*" hidden>
+                            </label>
+                            <label class="small-image-upload">
+                                <span>+</span>
+                                <input type="file" name="image_detail_3" accept="image/*" hidden>
+                            </label>
                         </div>
                     </div>
                     <div class="discription">
@@ -175,12 +196,14 @@
                         <div class="accordion-contenu">
                             <div class="contenu contenu_information">
                                 <h2>Détails de l'article</h2>
-                                <p><strong>Pays :</strong> Canada</p>
-                                <p><strong>Numéro de catalogue :</strong> 75ii</p>
-                                <p><strong>Type de tampon :</strong> Problème général</p>
-                                <p><strong>Centrage :</strong> F/VF</p>
-                                <p><strong>Format du tampon :</strong> Bloc</p>
-                                <p><strong>Année d'émission :</strong> 1898</p>
+                                <p><strong>Category  :</strong></p>
+                                <p><strong>Country :</strong> </p>
+                                <p><strong>Color :</strong></p>
+                                <p><strong>Condition :</strong> </p>
+                                <p><strong>Certified:</strong> </p>
+                                <p><strong>Catalog Number :</strong></p>
+                                <p><strong>Create Date:</strong></p>
+                                <p><strong>Description :</strong></p>
 
                             </div>
 
